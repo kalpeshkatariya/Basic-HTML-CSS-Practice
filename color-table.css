@@ -1,0 +1,100 @@
+* {
+    color: rgb(240, 238, 237);
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+    border: none;
+    height: 900px;
+    padding: 0;
+
+}
+
+.heading {
+    background-color: rgb(255, 30, 30);
+    border: none;
+    width: 100%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+.table1 {
+    border-top: 1px solid black;
+    height: 600px;
+    margin: 0;
+    border: none;
+    padding: 0;
+    position: relative;
+    display: flex;
+}
+
+table,
+tr {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.item1 {
+    background-color: rgb(51, 47, 208);
+    margin: 0;
+    border: none;
+    padding: 0;
+    width: 25%;
+}
+
+.item2 {
+    background-color: rgb(249, 245, 75);
+    margin: 0;
+    border: none;
+    padding: 0;
+    width: 50%;
+
+
+}
+
+.item3 {
+    background-color: rgb(139, 245, 250);
+    margin: 0;
+    border: none;
+    padding: 0;
+    width: 25%;
+
+}
+
+.aadha {
+    width: 100%;
+    height: 10px;
+    margin: 0;
+    border: none;
+    background-color: rgb(55, 146, 55);
+    padding: 0;
+
+}
+
+.tab {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+}
+
+
+
+.boottom {
+    background-color: rgb(253, 132, 31);
+    border: none;
+    width: 100%;
+    height: 150px;
+}
