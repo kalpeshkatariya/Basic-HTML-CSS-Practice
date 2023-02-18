@@ -287,3 +287,335 @@ console.log(num);
 //32
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    
+// Edyoda Assignment - 1     
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Question 1:
+
+// Result = 'Today is a beautiful day In Hawaii.'
+// Use the str1, str2, str3 variables to create the Result string. Keep the extra spaces, lowercase and uppercase letters in mind.
+
+var str1 = 'Today is';
+var str2 = '      a beautiful day     '
+var str3 = ' In Hawaii.     '
+
+
+var str4 = str1 + " " + str2.trim() + str3;
+
+console.log(str4);
+console.log(str4.toUpperCase());
+console.log(str4.toLowerCase());
+
+
+// question 1 is over
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+
+// Question 2:
+// vowel - A,E,I,O,U
+
+// Write a program to check vowel, consonant or non-alphabet using switch case. Change value of enteredAlphabet and check if your code works fine.
+
+var enteredAlphabet = (prompt("Enter a Alphabet Value"));
+var p = enteredAlphabet.toUpperCase();
+
+switch (p) {
+
+    case "A":
+        console.log("A is a Vowel");
+        break;
+
+    case "E":
+        console.log("E is a Vowel");
+        break;
+
+    case "I":
+        console.log("I is a Vowel");
+        break;
+
+    case "O":
+        console.log("O is a Vowel");
+        break;
+
+    case "U":
+        console.log("U is a Vowel");
+        break;
+
+    case "B":
+        console.log("B is a Consonante");
+        break;
+
+    case "C":
+        console.log("C is a Consonante");
+        break;
+
+    case "D":
+        console.log("D is a Consonante");
+        break;
+
+    case "F":
+        console.log("F is a Consonante");
+        break;
+
+    case "G":
+        console.log("G is a Consonante");
+        break;
+
+    case "H":
+        console.log("H is a Consonante");
+        break;
+
+    case "J":
+        console.log("J is a Consonante");
+        break;
+
+    case "K":
+        console.log("K is a Consonante");
+        break;
+
+    case "L":
+        console.log("L is a Consonante");
+        break;
+
+    case "M":
+        console.log("M is a Consonante");
+        break;
+
+    case "N":
+        console.log("N is a Consonante");
+        break;
+
+    case "P":
+        console.log("P is a Consonante");
+        break;
+
+    case "Q":
+        console.log("Q is a Consonante");
+        break;
+
+    case "R":
+        console.log("R is a Consonante");
+        break;
+
+    case "S":
+        console.log("S is a Consonante");
+        break;
+
+    case "T":
+        console.log("T is a Consonante");
+        break;
+
+    case "V":
+        console.log("V is a Consonante");
+        break;
+
+    case "W":
+        console.log("W is a Consonante");
+        break;
+
+    case "X":
+        console.log("X is a Consonante");
+        break;
+
+    case "Y":
+        console.log("Y is a Consonante");
+        break;
+
+    case "Z":
+        console.log("Z is a Consonante");
+        break;
+
+    default:
+        console.log("This is a Non-Alphabetic Value");
+        break;
+
+}
+
+
+//Questin 2 is over
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+
+// Question 3:
+
+// Write a JavaScript program to create menu driven calculator that performs basic arithmetic operations (add, subtract, multiply and divide) using switch case. The calculator should input two numbers and an operator: +, -, *, / from the user. It should perform operation according to the operator entered and must take input in given format.
+
+
+
+var val1 = parseInt(prompt("Enter a First Value"));
+var res = (prompt("Enter a +,-,*,/"));
+var op = res.toString();
+var val2 = parseInt(prompt("Enter a second Value"));;
+
+
+25
+switch (op) {
+
+    case "+":
+        console.log(val1 + val2);
+        break;
+
+    case "-":
+        console.log(val1 - val2);
+        break;
+
+    case "*":
+        console.log(val1 * val2);
+        break;
+
+    case "/":
+        console.log(val1 / val2);
+        break;
+
+    case "%":
+        console.log(val1 % val2);
+        break;
+
+    default:
+        console.log("Please Enter a Correct Value");
+        break;
+
+}
+
+// question 3 is over
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Question 4:
+
+// Write a JavaScript program to input sides of a triangle and check whether a triangle is equilateral, scalene or isosceles triangle using if else.
+
+// Properties of triangle:
+
+// A triangle is said Equilateral Triangle, if all its sides are equal. If a, b, c are three sides of triangle. Then, the triangle is equilateral only if a == b == c.
+
+// A triangle is said Isosceles Triangle, if its two sides are equal. If a, b, c are three sides of triangle. Then, the triangle is isosceles if either a == b or a == c or b == c.
+
+// A triangle is said Scalene Triangle, if none of its sides are equal.
+//traingle maximum value is 180 degree.
+
+
+var a = parseInt(prompt("Enter a first side value"));
+var b = parseInt(prompt("Enter a second side value"));
+var c = parseInt(prompt("Enter a third side value"));
+
+if (a == b) {
+
+
+    if (b == c) {
+
+        console.log("This is a Equilateral Triangle");
+    }
+    else {
+        console.log("This is a Isosceles Triangle");
+    }
+}
+else if (b == c) {
+    console.log("This is a Isosceles Triangle");
+
+}
+else if (a == c) {
+    console.log("This is a Isosceles Triangle");
+
+}
+
+else {
+    console.log("This is a Scalene Triangle");
+}
+
+//Find a value of pythagoras theorem
+
+var p = (a * a) + (b * b)
+
+console.log(" c Square value is = " + p);
+
+
+
+// Question 4 is over
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+
+// Question 5:
+
+
+
+// Write a JavaScript program to input electricity unit charge and calculate the total electricity bill according to the given condition:
+
+// For first 50 units Rs. 0.50/unit
+// For next 100 units Rs. 0.75/unit
+// For next 100 units Rs. 1.20/unit
+// For unit above 250 Rs. 1.50/unit. An additional surcharge of 20% is added to the bill.
+
+// For example, input: 20 units then bill is Rs10
+
+// Total Units: 300
+// 50 * 0.5 = 25
+// 100 * 0.75 = 75
+// 100 * 1.2 = 120
+// 50 * 1.5 = 75
+// Total = 295 + 20% surcharge on 295
+// Result = INR 354
+
+
+
+var units = parseInt(prompt("Enter a Unit"));
+var bill = 0;
+
+if (units <= 50 && units > 0) {
+
+    bill = bill + (units * 0.50);
+    units = 0;
+
+}
+else if (units > 0) {
+
+    bill = 50 * 0.5;
+    units = units - 50;
+}
+
+//
+
+if (units <= 100 && units > 0) {
+
+    bill = bill + units * 0.75;
+    units = 0;
+
+}
+else if (units > 0) {
+
+    bill = bill + 100 * 0.75;
+    units = units - 100;
+}
+//
+
+if (units <= 100) {
+
+    bill = bill + units * 1.2;
+    units = 0;
+
+}
+else if (units > 0) {
+
+    bill = bill + 100 * 1.2;
+    units = units - 100;
+}
+
+//
+
+if (units > 0) {
+
+    bill = bill + units * 1.5
+
+}
+
+bill = bill + (bill * 0.2);
+console.log(bill);
+
+
+// Question 5 is over
+
+
+//-----------------------------------------------------------------------------------------------------------------------------------------------
