@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        header {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            position: sticky;
+            width: 98.9vw;
+            top: 0;
+            box-shadow: 0px 0px 5px 1px grey;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+
+        }
+
+        li {
+            padding: 16px 14px;
+            font-size: 19px;
+            color: greenyellow;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .men:hover {
+            border-bottom: 2px solid red;
+            cursor: pointer;
+        }
+
+
+
+        #chat {
+            background-color: green;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            margin-right: 15px;
+            margin-bottom: 41px;
+            z-index: 9;
+
+        }
+
+        #chat:hover {
+            color: green;
+            background-color: white;
+            border: 2px solid black;
+        }
+
+        .container {
+            width: 98.8vw;
+            height: 191vh;
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: black;
+            background-image: url(./rafael-garcin-3DHU0k9k8nI-unsplash.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            margin-top: 1px;
+        }
+
+
+        .container::after {
+            clear: both;
+
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+            width: 25vw;
+            height: 85vh;
+            margin: 25px;
+            display: flex;
+            justify-content: center;
+            overflow: auto;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .box1 {
+            background-color: pink;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .box1:hover {
+            box-shadow: 0px 0px 3px 2px rgb(46, 24, 177);
+        }
+
+        .box2:hover {
+            box-shadow: 0px 0px 3px 2px rgb(46, 24, 177);
+        }
+
+        .box3:hover {
+            box-shadow: 0px 0px 3px 2px rgb(46, 24, 177);
+        }
+
+        .box4:hover {
+            box-shadow: 0px 0px 3px 2px rgb(46, 24, 177);
+        }
+
+        .box5:hover {
+            box-shadow: 0px 0px 3px 2px rgb(46, 24, 177);
+        }
+
+        .box6:hover {
+            box-shadow: 0px 0px 3px 2px rgb(46, 24, 177);
+        }
+
+        .box2 {
+            background-color: rgb(186, 116, 26);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .box3 {
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .box4 {
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .box5 {
+            background-color: rgb(139, 61, 192);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .box6 {
+            background-color: rgb(75, 149, 77);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+        }
+
+        .bg {
+            width: 100vw;
+            height: 60vh;
+            opacity: 1;
+        }
+
+        .bg:hover {
+            opacity: 0.6;
+
+        }
+
+        .logo {
+            max-width: 45px;
+            height: 35px;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+
+        .logo2 {
+            max-width: 120px;
+            max-height: 50px;
+            margin-right: 8px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+
+
+        .bg1 {
+            max-width: 99vw;
+            min-height: 50vh;
+            background-image: url(./clark-tibbs-oqStl2L5oxI-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+
+        }
+
+        .article1 {
+
+            width: 25vw;
+            height: 35vh;
+            margin: 0 auto;
+            position: absolute;
+            top: 0;
+
+
+
+
+        }
+
+
+        .article2 {
+            width: 25vw;
+            height: 39vh;
+            position: absolute;
+            bottom: 0;
+            overflow: auto;
+
+        }
+
+
+        .bottom {
+            clear: both;
+            background-color: green;
+            background-image: linear-gradient(orange, red);
+
+        }
+
+        .bottom>p {
+            color: white;
+            text-align: center;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .img1 {
+            background-color: red;
+
+
+        }
+
+        .logo2:hover {
+            box-shadow: 0px 0px 2px 1px white;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            box-shadow: 0px 0px 2px 1px red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./logo.jpg" alt="">
+
+
+        <nav>
+
+            <ul>
+
+                <li><a class="men" href="">Home</a></li>
+                <li><a class="men" href="">Product</a></li>
+                <li><a class="men" href="">Career</a></li>
+                <li><a class="men" href="">Contact Us</a></li>
+
+
+            </ul>
+        </nav>
+        <img class="logo2" src="https://classroom.edyoda.com/static/media/edyoda_transparent_logo.55bcc00f.png"
+            alt="logo2">
+    </header>
+    <main>
+        <a id="chat" href="./index.html" target="_blank"> Please Contact Us </a>
+        <div class="bg1">
+
+        </div>
+        <div class="container">
+            <div class="box1">The House Of Death
+
+                <div class=" img1 article1">
+                    <img src="./axp-photography-Mk1daOfVOnM-unsplash.jpg" alt="photo1" width="100%" height="100%">
+                </div>
+                <div class="article2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta ipsam. Praesentium illo
+                        deserunt corporis mollitia, velit vitae quis totam, accusamus voluptatem temporibus provident.
+                        Assumenda fuga, sequi cum ipsa autem optio magnam veniam deserunt architecto sit, corporis ut et
+                        perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur saepe molestias rem
+                        magni necessitatibus sapiente corporis exercitationem maiores. Ad voluptatem enim harum dolor
+                        aut est sapiente cum laboriosam similique!</p>
+                </div>
+
+            </div>
+            <div class="box2">The Bycycle
+                <div class="article1">
+                    <img src="./rocio-doleo-s9HWcDcor3k-unsplash.jpg" alt="photo1" width="100%" height="100%">
+                </div>
+                <div class="article2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta ipsam. Praesentium illo
+                        deserunt corporis mollitia, velit vitae quis totam, accusamus voluptatem temporibus provident.
+                        Assumenda fuga, sequi cum ipsa autem optio magnam veniam deserunt architecto sit, corporis ut et
+                        perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur saepe molestias rem
+                        magni necessitatibus sapiente corporis exercitationem maiores. Ad voluptatem enim harum dolor
+                        aut est sapiente cum laboriosam similique!</p>
+                </div>
+            </div>
+            <div class="box3">The Holly Place
+                <div class="article1">
+                    <img src="./tony-wan-Na8VqULGhSQ-unsplash.jpg" alt="photo1" width="100%" height="100%">
+                </div>
+                <div class="article2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta ipsam. Praesentium illo
+                        deserunt corporis mollitia, velit vitae quis totam, accusamus voluptatem temporibus provident.
+                        Assumenda fuga, sequi cum ipsa autem optio magnam veniam deserunt architecto sit, corporis ut et
+                        perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur saepe molestias rem
+                        magni necessitatibus sapiente corporis exercitationem maiores. Ad voluptatem enim harum dolor
+                        aut est sapiente cum laboriosam similique!</p>
+                </div>
+            </div>
+            <div class="box4">The Stranger Man
+                <div class="article1">
+                    <img src="./willian-justen-de-vasconcellos-8toop-9RN6I-unsplash.jpg" alt="photo1" width="100%"
+                        height="100%">
+                </div>
+                <div class="article2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta ipsam. Praesentium illo
+                        deserunt corporis mollitia, velit vitae quis totam, accusamus voluptatem temporibus provident.
+                        Assumenda fuga, sequi cum ipsa autem optio magnam veniam deserunt architecto sit, corporis ut et
+                        perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur saepe molestias rem
+                        magni necessitatibus sapiente corporis exercitationem maiores. Ad voluptatem enim harum dolor
+                        aut est sapiente cum laboriosam similique!</p>
+                </div>
+            </div>
+
+            <div class="box5">The Big Giant Car
+
+                <div class=" img1 article1">
+                    <img src="./esmihel-muhammad-KBC6UjzWuIE-unsplash.jpg" alt="photo1" width="100%" height="100%">
+                </div>
+                <div class="article2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta ipsam. Praesentium illo
+                        deserunt corporis mollitia, velit vitae quis totam, accusamus voluptatem temporibus provident.
+                        Assumenda fuga, sequi cum ipsa autem optio magnam veniam deserunt architecto sit, corporis ut et
+                        perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur saepe molestias rem
+                        magni necessitatibus sapiente corporis exercitationem maiores. Ad voluptatem enim harum dolor
+                        aut est sapiente cum laboriosam similique!</p>
+                </div>
+
+            </div>
+
+
+            <div class="box6">The Monkey
+
+                <div class=" img1 article1">
+                    <img src="./max-harlynking-dvgtOd56rh8-unsplash.jpg" alt="photo1" width="100%" height="100%">
+                </div>
+                <div class="article2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, soluta ipsam. Praesentium illo
+                        deserunt corporis mollitia, velit vitae quis totam, accusamus voluptatem temporibus provident.
+                        Assumenda fuga, sequi cum ipsa autem optio magnam veniam deserunt architecto sit, corporis ut et
+                        perspiciatis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia pariatur saepe molestias rem
+                        magni necessitatibus sapiente corporis exercitationem maiores. Ad voluptatem enim harum dolor
+                        aut est sapiente cum laboriosam similique!</p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer class="bottom">
+        <p>created by @Kalpesh_katariya</p>
+    </footer>
+</body>
+
+</html>
