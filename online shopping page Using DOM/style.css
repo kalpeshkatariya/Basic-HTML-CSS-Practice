@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Open+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap');
+
+
+*,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.scetion1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.scetion2 {
+    display: flex;
+    text-align: center;
+
+}
+
+.div1 {
+
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.store-tag {
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: 5px 0px 9px -70px;
+
+}
+
+
+
+.items {
+    margin: 8px;
+    width: 180px;
+    box-shadow: 1px 1px 6px grey;
+
+}
+
+.items-2 {
+    margin: 8px;
+    width: 180px;
+    box-shadow: 1px 1px 6px grey;
+
+}
+
+.first-iteme-image {
+    width: 180px;
+    height: 250px;
+}
+
+.item-lists {
+    font-family: 'Golos Text', sans-serif;
+    text-align: left;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item-info {
+    color: grey;
+    text-align: left;
+    margin: 7px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 550;
+
+}
+
+.item-price {
+    color: rgb(64, 186, 192);
+    text-align: left;
+    margin: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+@media only screen and (max-width:400px) {
+    .scetion1 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        margin-bottom: 45px;
+    }
+
+    .scetion2 {
+        display: flex;
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    .items {
+        margin: 8px;
+        width: 70vw;
+
+        box-shadow: 1px 1px 6px grey;
+
+    }
+
+    .items-2 {
+        margin: 8px;
+        width: 70vw;
+
+        box-shadow: 1px 1px 6px grey;
+
+    }
+
+    .store-tag {
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        margin: 15px;
+        width: 60vw;
+
+    }
+
+    .first-iteme-image {
+        width: 70vw;
+        height: auto;
+
+    }
+
+    .item-lists {
+        font-family: 'Golos Text', sans-serif;
+        text-align: left;
+        margin: 5px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .item-info {
+        color: grey;
+        text-align: left;
+        margin: 7px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        font-weight: 550;
+
+    }
+
+    .item-price {
+        color: rgb(64, 186, 192);
+        text-align: left;
+        margin: 5px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+
+    }
+}
